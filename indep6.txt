@@ -1,0 +1,23 @@
+nservers 6
+nflows 7
+objective 'b' 1
+
+beginservers
+server 1 (10.0,1.0);
+server 2 (10.0,1.0);
+server 3 (10.0,1.0);
+server 4 (10.0,1.0);
+server 5 (10.0,1.0);
+server 6 (10.0,1.0);
+endservers
+
+
+beginflows
+flow 1 [1,6]	(0.,10.) (1.,5.);
+flow 2 [1,1]   	(0.,10.) (1.,5.);
+flow 3 [2,2]  	(0.,10.) (1.,5.);
+flow 4 [3,3] 	(0.,10.) (1.,5.);
+flow 5 [4,4] 	(0.,10.) (1.,5.);
+flow 6 [5,5] 	(0.,10.) (1.,5.);
+flow 6 [6,6] 	(0.,10.) (1.,5.);
+endflows
