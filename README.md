@@ -44,7 +44,7 @@ nservers 6        #number of servers
 nflows 7          # number of flows
 objective 'd' 1   #'d' i = maximal delay for flow i; 'b' j = maximal backlog at server j
 
-#list of server's caracteristics (servers numbered from left to right)
+#list of server's characteristics (servers numbered from left to right)
 beginservers 
 server 1 (10.0,1.0);    #(rate,latency) list. The service curve is the maximum.
 server 2 (10.0,1.0);
@@ -54,7 +54,7 @@ server 5 (10.0,1.0);
 server 6 (10.0,1.0);
 endservers
 
-#list of flows 's caracteristics (servers numbered from left to right)
+#list of flows 's characteristics (servers numbered from left to right)
 beginflows 
 flow 1 [1,6]	(0.,10.) (1.,5.); #[source,destination] (burst,rate) list the arrival curve in the minimum
 flow 2 [1,1]   	(0.,10.) (1.,5.);
