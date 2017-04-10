@@ -1,0 +1,13 @@
+nservers 1
+nflows 2
+objective 'd' 1
+
+beginservers
+server 1 (1.,1.);
+endservers
+
+
+beginflows
+flow 1 [1,1]  (1.,0.33333);
+flow 2 [1,1] (1.,0.33333);
+endflows
