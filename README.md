@@ -11,7 +11,7 @@ Feed-forward Networks*, IEEE/ACM Transactions on Networking, 2015
 
 [2] Anne Bouillard and Giovanni Stea, *Exact Worst-case Delay for FIFO-multiplexing tandems*, Sixth International Conference on Performance Evaluation Methodologies and Tools (ValueTools 2012)
 
-**For Arbitrary multiplexing networks: (to come)**
+**For Arbitrary multiplexing networks:**
 
 [3] Anne Bouillard and Eric Thierry, *Tight performance bounds in the worst-case analysis
     of feed-forward networks*, Journal of Discrete Event Dynamic Systems, 2016
@@ -25,6 +25,10 @@ Programs are written in OCaml, and comments are in French. They are all based on
 - **fifoWCD.ml** computes the worst-case delay in a FIFO tandem networks (returns a mixed-integer linear program with an exponential number of constraints in the size of the network)
 - **fifoLB.ml** computes a lower bound of the worst-case delay (returns a linear program with a polynomial number of constraints)
 - **fifoUB.ml** computes an upper bound of the worst-case delay (returns a linear program with an exponential number of constraints)
+
+## Arbitrary (or blind) multiplexing networks
+
+- **blindWCD.ml** computes the worst-case delay in a tandem networks under arbitrary multoplexing (returns a linear program with a polynomial number of constraints in the size of the network)
 
 ### Usage
 
